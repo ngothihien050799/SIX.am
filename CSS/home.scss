@@ -1,0 +1,538 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.content-slogan {
+  text-align: center;
+  font-size: 40px;
+}
+.content-button {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  background: #1d50ab;
+  padding: 20px 0px;
+  border-radius: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+.nomal-title {
+  color: #122b4d;
+  font-size: 25px;
+  text-align: center;
+  margin: 50px;
+}
+.nghe_si {
+  display: flex;
+  margin: 20px;
+  .nsut-share {
+    background: yellow;
+    border: 4px dashed black;
+    border-radius: 10px;
+    margin-left: 30px;
+    padding: 20px;
+    font-size: 24px;
+    color: #122b4d;
+    text-align: justify;
+  }
+}
+.form-shopping {
+  margin-top: 30px;
+
+  background: #122b4d;
+  color: white;
+  padding: 30px;
+  line-height: 2;
+  font-size: 20px;
+  .form-title {
+    color: yellow;
+    text-align: center;
+    font-size: 25px;
+  }
+  .form-gia {
+    margin-left: 50px;
+  }
+  .form-dathang {
+    overflow: hidden;
+    input,
+    select, textarea{
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    // textarea{
+    //   width: 100%;
+    // }
+    .number {
+      display: flex;
+    }
+
+    .dathang {
+      background: #cd2653;
+      color: white;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 20px;
+    }
+  }
+}
+
+.form-dk {
+  background: #e8f5e9;
+  margin: 30px;
+  padding: 10px;
+  .container-form {
+    .phone {
+      display: flex;
+      margin: 20px;
+      &-text a {
+        text-decoration: none;
+      }
+    }
+    .input-phone {
+      input {
+        width: 70%;
+        margin-left: 20px;
+        padding: 10px;
+      }
+      .Đang_ky {
+        width: 20%;
+        background: #cd2653;
+        color: white;
+        margin-left: 20px;
+        padding: 10px;
+      }
+    }
+  }
+}
+.header {
+  width: 100%;
+  height: 116px;
+  background: #122b4d;
+  display: flex;
+  justify-content: center; /*các content nằm ở giữa*/
+  align-items: center;
+
+  &-menu {
+    ul {
+      font-size: 18px;
+      display: flex;
+      list-style: none;
+
+      li {
+        padding: 0 30px;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+        .shopping {
+          color: yellow;
+          span {
+            display: inline-block;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.banner {
+  img {
+    display: block;
+    margin: auto;
+  }
+}
+.container-content {
+  width: 1024px;
+  margin: 50px auto 15px;
+  .content {
+    // &-slogan{
+    //     text-align: center;
+    //     font-size: 40px;
+    // }
+    &-image {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-box {
+      display: flex;
+      margin-top: 50px;
+
+      &-question {
+        width: 30%;
+        background: #122b4d;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        padding: 50px 10px;
+      }
+      &-list-item {
+        background: #f3f3f3;
+        border-radius: 10px;
+        padding: 10px 40px;
+        margin: 8px 0 5px 20px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+
+        img {
+          margin-right: 30px;
+        }
+      }
+    }
+    .khcao {
+      text-align: center;
+      margin-top: 50px;
+
+      &-title {
+        font-size: 20px;
+        background: #122b4d;
+        color: white;
+        padding: 10px;
+        border-radius: 20px 20px 0px 0px;
+      }
+      &-warning {
+        background: #f3f3f3;
+        display: flex;
+        padding: 30px;
+        border-radius: 0px 0px 20px 20px;
+        &-list {
+          margin-left: 20px;
+          list-style: none;
+          line-height: 2.5;
+          text-align: justify;
+          li {
+            display: flex;
+            .text {
+              margin-left: 20px;
+            }
+            .check {
+              height: 20px;
+              background: #f3f3f3;
+            }
+          }
+          &-text {
+            width: 20px;
+          }
+        }
+      }
+    }
+    .quote {
+      text-align: center;
+      margin: 40px;
+
+      &-title {
+        font-size: 22px;
+        color: #122b4d;
+      }
+      &-button {
+        margin: 30px;
+        height: 120px;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        padding-top: 45px;
+        line-height: 1.5;
+        background: url("http://127.0.0.1:5503/six-am.vn/includes/img/label-01.png")
+          no-repeat;
+        background-size: contain;
+      }
+    }
+    .warning {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      background: url("http://127.0.0.1:5503/six-am.vn/includes/img/line-01.png")
+        no-repeat;
+      background-position-y: 160px;
+      background-size: contain;
+      &-item p {
+        margin: 10px 40px;
+        padding: 20px;
+        background-color: yellow;
+        border-radius: 15px;
+      }
+    }
+  }
+  .main-content {
+    .thanh_phan {
+      text-align: center;
+    }
+    .cong_dung {
+      p {
+        font-size: 22px;
+        text-align: center;
+        line-height: 1.5;
+        margin: 0 0 15px;
+      }
+      &-list {
+        display: flex;
+        flex-wrap: wrap;
+        &-item {
+          display: flex;
+          img {
+            width: 110px;
+          }
+          &-text {
+            width: 350px;
+            font-size: 20px;
+            margin: 10px;
+            padding: 30px 15px 0px;
+          }
+        }
+      }
+    }
+
+    .user-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &-item {
+        border-radius: 10px;
+        background: #122b4d;
+        color: white;
+        width: 45%;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .content-lieutrinh {
+      text-align: center;
+      .lieutrinh-text {
+        background: #ffe641;
+        border: 4px dashed #122b4d;
+        border-radius: 10px;
+        font-size: 25px;
+        margin: 0 0 30px;
+        padding: 20px;
+      }
+    }
+    .chuyengia {
+      background: yellow;
+      border: 4px dashed #122b4d;
+      border-radius: 10px;
+      font-size: 18px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .capphep {
+      text-align: justify;
+
+      .capphep-img {
+        display: flex;
+        justify-content: space-between;
+        img {
+          width: 100%;
+        }
+        .name-img {
+          text-align: center;
+          background: #122b4d;
+          margin: 10px;
+          padding: 10px;
+          color: white;
+        }
+      }
+    }
+    .baochi {
+      text-align: center;
+
+      .sub-img {
+        padding: 20px;
+        color: #c6c6c6;
+      }
+    }
+    .phanhoi-fb {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .phanhoi-fb-list {
+        display: flex;
+        .avatar {
+          width: 60px;
+          height: 60px;
+          margin-top: 5px;
+        }
+        .cmt-fb {
+          // // background-image: url(/Image/cmt-fb-1.jpg) ;
+          // // height: 200px;
+          // background-size: contain;
+          // background-repeat: no-repeat;
+          height: 180px;
+          img {
+            height: 180px;
+          }
+          .cmt-fb-text {
+            position: relative;
+            top: -150px;
+            left: 25px;
+            width: 420px;
+          }
+
+          p {
+            width: 350px;
+          }
+        }
+      }
+    }
+    .diemban {
+      .diemban-row {
+        display: flex;
+        width: 50%;
+        position: relative;
+        left: -90px;
+        .youtube {
+          padding: 20px;
+          float: left;
+          margin: 0px auto;
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .camket {
+      &-bold {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        color: #122b4d;
+      }
+      &-list {
+        display: flex;
+        &-item {
+          background: #122b4d;
+          padding: 20px 15px;
+          margin: 15px;
+          width: 25%;
+          line-height: 2;
+          text-align: center;
+          .title {
+            font-size: 20px;
+            color: yellow;
+          }
+          .camket-icon {
+            color: yellow;
+            font-size: 20px;
+            margin: 20px;
+          }
+
+          .camket-text {
+            color: white;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .Q-A {
+      color: #122b4d;
+
+      &-cauhoi {
+        display: flex;
+        margin: 30px;
+
+        &-icon {
+          width: 25%;
+          font-size: 83px;
+          text-align: right;
+          padding-right: 20px;
+        }
+
+        .cauhoi {
+          width: 75%;
+          border: solid 6px #122b4d;
+          border-radius: 35px;
+          border-bottom-left-radius: 0;
+          line-height: 90px;
+          font-size: 20px;
+          padding-left: 40px;
+        }
+      }
+      &-tl {
+        display: flex;
+        margin: 30px;
+        .tl {
+          width: 75%;
+          border: solid 6px #122b4d;
+          border-radius: 35px;
+          border-bottom-right-radius: 0;
+          font-size: 20px;
+          padding: 30px 40px;
+          background: #ffe641;
+        }
+        &-icon {
+          width: 25%;
+          font-size: 83px;
+          padding-left: 20px;
+        }
+      }
+      .border {
+        border-bottom: dashed 2px #122b4d;
+      }
+      .img-footer {
+        text-align: center;
+      }
+    }
+
+    .reponsive {
+      display: none;
+    }
+    @media screen and (max-width: 768px) {
+      .reponsive {
+        display: block;
+      }
+      .cong_dung-list {
+        display: block !important;
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  height: 190px;
+  background-color: #122b4d;
+  color: #e1cc4f;
+  font-size: 18px;
+  padding-top: 20px;
+  .container-footer {
+    margin: 0 auto;
+    width: 1024px;
+
+    .footer-top {
+      line-height: 1.8;
+      &-left {
+        width: 50%;
+        float: left;
+      }
+      &-right {
+        .input-phone {
+          input {
+            width: 300px;
+            padding: 10px;
+            font-size: 18px;
+          }
+          .dangky {
+            margin-left: 10px;
+            background: #cd2653;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      clear: both;
+    }
+  }
+}
